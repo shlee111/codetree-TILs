@@ -1,18 +1,20 @@
 #include <stdio.h>
 
 int main() {
-    int n, cnt=0, a=1;
+    int n, cnt, divisor;
     scanf("%d", &n);
+    cnt = 0;
+    divisor = 1;
 
-    for(int i=1;;++i){
-        int a = n/i;
-        
-        cnt++;
-        if(a<=1){
-            break;
+    if (n >= 2 && n <= 5000) {
+        while (n > 1) {
+            n /= divisor;
+            divisor++;
+            cnt++;
         }
     }
-    printf("%d", cnt);
-    // 여기에 코드를 작성해주세요.
+
+    printf("%d\n", cnt);
+
     return 0;
 }
