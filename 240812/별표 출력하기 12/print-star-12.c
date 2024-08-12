@@ -5,15 +5,18 @@ int main() {
     scanf("%d", &n);
 
     for(int i=0;i<n;i++){
-        for(int j=0;j<i;j++){
-            printf("  ");
-        }
-        for(int j=n-i;j>0;j--){
-            if(i==0 || j%2==1){
-                printf("* ");
+        for(int j=0;j<n;j++){
+            if(j%2 == 0){
+                if(i==0)
+                    printf("* ");
+                else
+                    printf("  ");
             }
             else{
-                printf("  ");
+                if(i<=j)
+                    printf("* ");    
+                else
+                    printf("  ");
             }
         }
     printf("\n");
