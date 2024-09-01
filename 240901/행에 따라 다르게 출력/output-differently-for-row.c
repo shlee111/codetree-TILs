@@ -1,24 +1,23 @@
-#include <stdio.h>
+#include<stdio.h>
 
 int main() {
-    int a;
-    scanf("%d", &a);
-
-    int k = 0;
-    int num = 1;
-
-    for (int i = 0; i < a; i++) {
-        for (int j = 0; j < a; j++) {
-            if (i % 2 == 0) {
-                num = 1;
-            } else {
-                num = 2;
-            }
-            k = k + num;
-            printf("%d ", k);
-        }
-        printf("\n");
-    }
-
-    return 0;
+    // 변수 선언 및 입력
+    int n;
+    scanf("%d", &n);
+    int cnt = 0;
+	
+	// 값을 조건대로 증가시켜 출력합니다.
+	for(int i = 0; i < n; i++) {
+		for(int j = 0; j < n; j++) {
+			if(i % 2 == 0)
+                cnt++;
+            else
+                cnt += 2;
+            
+            printf("%d ", cnt);
+		}
+		printf("\n");
+	}
+	
+	return 0;
 }
