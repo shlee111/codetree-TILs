@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int n, arr[10];
+    int n, arr[100];
     int cnt_arr[9] = {0, };
 
     scanf("%d", &n);
