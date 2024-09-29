@@ -2,7 +2,7 @@
 
 int main() {
     int a, b, i, arr[100], sum=0;
-    int cnt_arr[12]={0,};
+    int cnt_arr[11]={0,};
 
     scanf("%d %d", &a, &b);
     
@@ -10,7 +10,7 @@ int main() {
         arr[i] = i%b;
         cnt_arr[arr[i]]++;
     }
-    for(i=0;i<11;i++){
+    for(i=0;i<10;i++){
         sum += cnt_arr[i]*cnt_arr[i];
     }
     printf("%d", sum);
