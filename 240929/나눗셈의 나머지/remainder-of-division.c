@@ -2,7 +2,7 @@
 
 int main() {
     int a, b, i, arr[10], sum=0;
-    int cnt_arr[11]={0,};
+    int cnt_arr[12]={0,};
 
     scanf("%d %d", &a, &b);
     
