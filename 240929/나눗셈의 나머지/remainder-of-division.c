@@ -10,7 +10,7 @@ int main() {
         arr[i] = i%b;
         cnt_arr[arr[i]]++;
     }
-    for(i=0;i<10;i++){
+    for(i=0;i<11;i++){
         sum += cnt_arr[i]*cnt_arr[i];
     }
     printf("%d", sum);
