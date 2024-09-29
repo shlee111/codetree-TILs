@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int a, b, i, arr[10], sum=0;
+    int a, b, i, arr[100], sum=0;
     int cnt_arr[12]={0,};
 
     scanf("%d %d", &a, &b);
