@@ -6,7 +6,7 @@ int main() {
 
     scanf("%d %d", &a, &b);
     
-    for(i=a;i>=1;i/=b){
+    for(i=a;i>1;i/=b){
         arr[i] = i%b;
         cnt_arr[arr[i]]++;
     }
