@@ -21,11 +21,11 @@ int main() {
             scanf("%d", &b);
             for(int j=1;j<=n;j++){
                 if(arr_n[j]==b){
-                    idx = i;
+                    idx = j;
                     break;
                 }
             }
-            printf("%d\n", idx+1);
+            printf("%d\n", idx);
         }
         else{
             int s, e;
