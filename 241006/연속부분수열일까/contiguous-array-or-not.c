@@ -2,7 +2,7 @@
 #include <stdbool.h>
 
 int main() {
-    int n1,n2,A[100], B[100], cnt=0, i;
+    int n1,n2,A[100], B[100], i;
     scanf("%d %d", &n1, &n2);
     for(i=0;i<n1;i++){
         scanf("%d ", &A[i]);
@@ -27,7 +27,7 @@ int main() {
                 break;
             }
         }
-         if(success=true){
+         if(success){
         printf("Yes");
         return 0;
         }
